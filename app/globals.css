@@ -79,7 +79,7 @@
   }
 
   .leftsidebar_link {
-    @apply relative flex justify-start gap-4 rounded-lg p-4;
+    @apply relative flex justify-start gap-4 rounded-lg p-3;
   }
 
   .pagination {
@@ -116,10 +116,58 @@
   }
 }
 body {
-  /* Add your custom styles here */
-  background-image: url(../public/assets/bg.jpg) ;
-  background-repeat: no-repeat;
-  background-position: cover;
-  background-size: 100%;
-  background-color: #000000;
+  background: rgb(252,148,67);
+  background: radial-gradient(circle, rgba(252,148,67,1) 0%, rgba(210,121,87,1) 17%, rgba(158,87,112,1) 43%, rgba(42,11,167,1) 83%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 134%);
+  font-family: "Times New Roman", Times, serif;
+}
+.codeEditor {
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+}
+
+.signinPage {
+  height: 400vh;
+  background: rgb(252, 148, 67);
+  background: linear-gradient(
+    101deg,
+    rgba(252, 148, 67, 1) 0%,
+    rgba(195, 116, 187, 1) 27%,
+    rgba(42, 11, 167, 1) 63%,
+    rgba(24, 2, 110, 1) 100%,
+    rgba(14, 0, 73, 1) 100%
+  );
+}
+.signunPage {
+  height: 100vh;
+  background: rgb(252, 148, 67);
+  background: linear-gradient(
+    101deg,
+    rgba(252, 148, 67, 1) 0%,
+    rgba(195, 116, 187, 1) 27%,
+    rgba(42, 11, 167, 1) 63%,
+    rgba(24, 2, 110, 1) 100%,
+    rgba(14, 0, 73, 1) 100%
+  );
+}
+.frame {
+  background-color: white;
+  border-radius: 2000px;
+  overflow: hidden;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weCode {
+  background-color: white;
+  border-radius: 2000px;
+  overflow: hidden;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 80px;
+  font-family: "Times New Roman", Times, serif;
 }

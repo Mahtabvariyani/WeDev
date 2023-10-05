@@ -61,8 +61,7 @@ function SemiProfi({ name, imgUrl }: Props) {
   }
   return (
     <>
-      <div className="flex flex-col  bg-zinc-900 text-white">
-      
+      <div className="flex flex-col  bg-zinc-900 text-white codeEditor">
         <div className="relative h-20 w-20 object-cover">
           <Image
             src={imgUrl}
@@ -71,7 +70,10 @@ function SemiProfi({ name, imgUrl }: Props) {
             className="rounded-full object-cover shadow-2xl"
           />
         </div>
-        <h5 className="text-left text-heading3-bold text-light-1">  hey  {name} enjoy hacking</h5>
+        <h5 className="text-left text-heading3-bold text-light-1">
+          {" "}
+          hey {name} enjoy hacking
+        </h5>
         <div className="flex gap-2 p-2">
           <button
             className="grow p-2 bg-zinc-800 rounded-lg hover:opacity-80"
