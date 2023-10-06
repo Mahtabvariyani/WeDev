@@ -59,7 +59,7 @@
   }
 
   .topbar {
-    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-opacity-30 bg-dark-2 px-6 py-3;
+    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-opacity-0 bg-dark-2 px-6 py-3;
   }
 
   .bottombar {
@@ -75,7 +75,7 @@
   }
 
   .leftsidebar {
-    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-opacity-30 border-r border-r-dark-4 bg-opacity-30 bg-dark-2 pb-5 pt-28 max-md:hidden;
+    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-opacity-0 border-r border-r-dark-4 bg-opacity-30 bg-dark-2 pb-5 pt-28 max-md:hidden;
   }
 
   .leftsidebar_link {
@@ -87,7 +87,7 @@
   }
 
   .rightsidebar {
-    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-opacity-30 border-l border-l-dark-4 bg-opacity-30 bg-dark-2 px-10 pb-6 pt-28 max-xl:hidden;
+    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-opacity-0 border-l border-l-dark-4 bg-opacity-50 bg-dark-2 px-10 pb-6 pt-28 max-xl:hidden;
   }
 }
 
@@ -107,7 +107,7 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #ffffff00; /* Background color with opacity */
+    background: transparent; /* Background color with opacity */
     border-radius: 50px;
   }
 
@@ -118,8 +118,13 @@
 body {
   background: rgb(252,148,67);
   background: radial-gradient(circle, rgba(252,148,67,1) 0%, rgba(210,121,87,1) 17%, rgba(158,87,112,1) 43%, rgba(42,11,167,1) 83%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 134%);
-  font-family: "Times New Roman", Times, serif;
+ 
 }
+/* Set the font for the entire application */
+body, .main-container, .head-text, .activity-card, .no-result, .community-card, .thread-card_bar, .user-card, .searchbar, .topbar, .bottombar, .bottombar_container, .bottombar_link, .leftsidebar, .leftsidebar_link, .pagination, .rightsidebar, h3, .special-text, .codeEditor {
+font-family: 'Times New Roman', Times, serif;
+}
+
 
 .signunPage {
   height: 100vh;
@@ -189,4 +194,7 @@ margin-top: 30px;
   color: #e503f9; /* Change to your desired color */
   font-weight: bold; /* Add other styling as needed */
   /* You can customize the font size, style, etc. here */
+}
+.codeEditor{
+margin: 20px;
 }

@@ -27,7 +27,7 @@ async function Page({
 
   return (
     <>
-      <h1 className='head-text'>Groups</h1>
+      <h1 className='head-text' style={{color:"white"}}>Groups</h1>
 
       <div className='mt-5'>
         <Searchbar routeType='communities' />

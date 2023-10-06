@@ -14,7 +14,7 @@ async function Page() {
 
   return (
     <>
-      <h1 className='head-text'>Ask Question</h1>
+      <h1 className='head-text text-white'>Ask Question</h1>
 
       <PostThread userId={userInfo._id} />
     </>

@@ -4,7 +4,7 @@ export const sidebarLinks = [
     route: "/",
     label: "Home",
   },{
-    imgURL: "/assets/code.svg",
+    imgURL: "/assets/livecode.svg",
     route: "/liveCode",
     label: "LiveCode",
   },
