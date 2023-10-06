@@ -120,36 +120,43 @@ body {
   background: radial-gradient(circle, rgba(252,148,67,1) 0%, rgba(210,121,87,1) 17%, rgba(158,87,112,1) 43%, rgba(42,11,167,1) 83%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 100%, rgba(14,0,73,1) 134%);
   font-family: "Times New Roman", Times, serif;
 }
-.codeEditor {
-  background-color: transparent;
-  backdrop-filter: blur(30px);
-}
 
-.signinPage {
-  height: 400vh;
-  background: rgb(252, 148, 67);
-  background: linear-gradient(
-    101deg,
-    rgba(252, 148, 67, 1) 0%,
-    rgba(195, 116, 187, 1) 27%,
-    rgba(42, 11, 167, 1) 63%,
-    rgba(24, 2, 110, 1) 100%,
-    rgba(14, 0, 73, 1) 100%
-  );
-}
 .signunPage {
   height: 100vh;
-  background: rgb(252, 148, 67);
-  background: linear-gradient(
-    101deg,
-    rgba(252, 148, 67, 1) 0%,
-    rgba(195, 116, 187, 1) 27%,
-    rgba(42, 11, 167, 1) 63%,
-    rgba(24, 2, 110, 1) 100%,
-    rgba(14, 0, 73, 1) 100%
-  );
+  background: linear-gradient(270deg, #fc9443, #d27957, #9e5770, #2a0ba7, #0e0049);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
+.signinPage {
+  height: 410vh;
+  background: linear-gradient(270deg, #fc9443, #d27957, #9e5770, #2a0ba7, #0e0049);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .frame {
+  border: 12px double rgb(8, 20, 111);
   background-color: white;
   border-radius: 2000px;
   overflow: hidden;
@@ -170,4 +177,16 @@ h3 {
   font-weight: bolder;
   font-size: 80px;
   font-family: "Times New Roman", Times, serif;
+}
+
+
+.clerk{
+margin-top: 30px;
+}
+
+
+.special-text {
+  color: #e503f9; /* Change to your desired color */
+  font-weight: bold; /* Add other styling as needed */
+  /* You can customize the font size, style, etc. here */
 }
