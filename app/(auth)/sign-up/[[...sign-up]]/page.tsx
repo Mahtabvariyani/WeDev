@@ -20,6 +20,7 @@ export default function Page() {
           <div className=" lg:w-1/2">
             <h3 className="flex items-center justify-center h-screen text-white">
              <SignUp />
+             
             </h3>
           </div>
 
